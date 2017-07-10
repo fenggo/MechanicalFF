@@ -1,0 +1,140 @@
+####Parameters from ab inito calculation(NWchem at b3lyp/6-311g++)
+#### fitting to hession matrix by "joyce" package
+
+species
+H   core
+C3  core
+C30 core
+N3  core
+N31 core
+N32 core
+O2  core
+
+keyword molmec 
+
+#
+harmonic  bond intra
+C3 core H core 32.8621086014 1.088
+C3 core N3 core 18.4960874155 1.459
+C30 core H core 33.050680545 1.086
+C30 core N3 core 18.1967750955 1.485
+N31 core N3 core 20.7853733421 1.385
+N31 core O2 core 39.0296511061 1.264
+N3 core N32 core 18.0525044844 1.402
+N32 core O2 core 39.3045551697 1.265
+#
+three bond intra 
+C3 core H core H core 3.51679021 109.26
+C3 core H core N3 core 4.8676795716 110.89
+C3 core N3 core N3 core 10.5117574752 112.56
+N3 core C3 core C30 core 4.6441612564 124.87
+N3 core C3 core N31 core 8.4112089016 118.88
+N3 core C3 core N32 core 7.3352588412 117.8
+C30 core H core H core 3.5128342712 108.61
+C30 core H core N3 core 4.8969609808 108.47
+C30 core N3 core N3 core 9.4542988636 110.86
+N3 core C30 core N31 core 6.754027066 115.58
+N3 core C30 core N32 core 7.777373608 118.11
+N31 core N3 core O2 core 4.8418421196 118.52
+N31 core O2 core O2 core 10.1224763076 125.64
+N32 core N3 core O2 core 4.2514620416 117.29
+N32 core O2 core O2 core 10.8845028808 126.14
+#
+## torsion angle nitro rotation
+torsion intra bond #### or 0.020217 0.140417
+C30 core N3 core N32 core O2 core  0.022383   -2 0 
+torsion intra bond
+C3  core N3 core N32 core O2 core  0.130447   -2 0  
+torsion intra bond # nitro rotation
+C30 core N3 core N31 core O2 core  0.251418   -2 0 
+#torsion intra bond #Or 0.301726 -0.048683
+#C3  core N3 core N31 core O2 core  0.000     -2 0
+torsion intra bond # nitro swing  
+N31 core N3 core C30 core N3 core  0.743337   -2 0 
+torsion intra bond # nitro swing
+N31 core N3 core C3  core N3 core  0.009977   -2 0 
+torsion intra bond     #### nitro swing
+N32 core N3 core C30 core N3 core  0.480313    2 0
+torsion intra bond     #### nitro swing
+N32 core N3 core C3  core N3 core  0.067301    2 0 
+torsion intra bond   ### H bond rotate
+H core C30 core N3 core C3  core  1.476614    1 0   
+torsion intra bond  
+H core C30 core N3 core N31 core  -2.934512   1 0  
+torsion intra bond  
+H core C30 core N3 core N32 core  2.240271    1 0   
+torsion intra bond
+H core C3  core N3 core C30 core  0.399926   -1 0 
+torsion intra bond
+H core C3  core N3 core N31 core  5.346573   -1 0
+torsion intra bond
+H core C3  core N3 core N32 core -4.018240   -1 0 
+
+##### L-J
+lenn epsilon geometric 12  6 x13 
+H    core H    core  0.000 12.500
+lenn epsilon geometric 12  6 x13 
+H    core C3    core  0.000 12.500
+lenn epsilon geometric 12  6 x13 
+H    core C30   core  0.000 12.500
+lenn epsilon geometric 12  6 x13 
+C3    core C3    core  0.000 12.500
+lenn epsilon geometric 12  6 x13 
+C3    core C30   core  0.000 12.500
+lenn epsilon geometric 12  6 x13 
+C30   core C30   core  0.000 12.500
+lenn epsilon geometric 12  6 x13 
+H     core N3    core  0.000 12.500
+lenn epsilon geometric 12  6 x13 
+H     core N31   core  0.000 12.500
+lenn epsilon geometric 12  6 x13 
+H     core N32   core  0.000 12.500
+lenn epsilon geometric 12  6 x13 
+C3    core N3    core  0.000 12.500
+lenn epsilon geometric 12  6 x13 
+C30   core N3    core  0.000 12.500
+lenn epsilon geometric 12  6 x13 
+C3    core N31   core  0.000 12.500
+lenn epsilon geometric 12  6 x13 
+C3    core N32   core  0.000 12.500
+lenn epsilon geometric 12  6 x13 
+C30   core N31   core  0.000 12.500
+lenn epsilon geometric 12  6 x13 
+C30   core N32   core  0.000 12.500
+lenn epsilon geometric 12  6 x13 
+N3    core N3    core  0.000 12.500
+lenn epsilon geometric 12  6 x13 
+N3    core N31   core  0.000 12.500
+lenn epsilon geometric 12  6 x13 
+N3    core N32   core  0.000 12.500
+lenn epsilon geometric 12  6 x13 
+H     core O2    core  0.000 12.500
+lenn epsilon geometric 12  6 x13 
+C3    core O2    core  0.000 12.500
+lenn epsilon geometric 12  6 x13 
+C30   core O2    core  0.000 12.500
+lenn epsilon geometric 12  6 x13 
+N3    core O2    core  0.000 12.500
+lenn epsilon geometric 12  6 x13 
+N31   core O2    core  0.000 12.500
+lenn epsilon geometric 12  6 x13 
+N32   core O2    core  0.000 12.500
+lenn epsilon geometric 12  6 x13 
+O2    core O2    core  0.000 12.500
+
+
+### epsilon/sigma 
+epsilon/sigma
+H     core 0.659139E-03  3.19500    
+epsilon/sigma
+C3    core 0.412396E-02  3.89830
+epsilon/sigma    
+C30   core 0.412396E-02  3.89830
+epsilon/sigma
+N3    core 0.335641E-02  3.66210
+epsilon/sigma
+N31   core 0.335641E-02  3.66210 
+epsilon/sigma
+N32   core 0.335641E-02  3.66210     
+epsilon/sigma
+O2    core 0.414998E-02  3.40460    

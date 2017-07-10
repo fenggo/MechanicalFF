@@ -1,0 +1,161 @@
+####Parameters from ab inito calculation(NWchem at b3lyp/6-311g++)
+
+species
+H   core
+C3  core
+C30 core
+N3  core
+N31 core
+N32 core
+O2  core
+
+keyword molmec 
+
+###Bonds:
+harmonic k3 k4 intra bond
+C3  core H  core 71.396075 -569.930679 2648.935533 1.072172 
+harmonic k3 k4 intra bond
+C3  core N3 core 70.428971 -521.131226 1900.228349 1.438468
+harmonic k3 k4 intra bond
+C30  core H core 80.962471 -644.570074 2468.128036 1.062966
+harmonic k3 k4 intra bond
+C30  core N3  core 65.348885 -483.608088 1776.048056 1.464369
+harmonic k3 k4 intra bond
+N31  core N3  core 68.881898 -524.186301 2462.306964 1.385903
+harmonic k3 k4 intra bond
+N31  core O2 core 107.169046 -889.224400 4406.513376 1.260029
+harmonic k3 k4 intra bond
+N3   core N32 core 62.371118 -478.467915 2277.139721 1.402912
+harmonic k3 k4 intra bond
+N32  core O2 core 108.456267 -890.895360 4407.905891 1.259545
+
+###Angles:
+three k3 k4 bond intra
+N3    core C3    core C30   core 27.743171 -20.068309 -203.642743 123.712216
+three k3 k4 bond intra
+N3    core C3    core N31   core 29.007687 -74.983436 471.979381 118.909869
+three k3 k4 bond intra
+N3    core C3    core N32   core 27.965902 -56.008135 467.107852 117.618574
+three k3 k4 bond intra
+N3    core C30   core N31   core 28.155505 -58.308238 410.835140 115.516536
+three k3 k4 bond intra 
+N3    core C30   core N32   core 28.758446 -41.090836 490.693223 118.018313
+three k3 k4 bond intra
+C3    core H     core H     core 10.698542 -5.800362 -38.010852 109.497194
+three k3 k4 bond intra   ! Ang 7
+C3    core H     core N3    core 14.703507 -7.328740 -35.685102 110.771202
+three k3 k4 bond intra   ! Ang 8
+C30   core H     core H     core 10.867796 -6.852246 -37.019926 108.651233          
+three k3 k4 bond intra   ! Ang 9
+C30   core H     core N3  15.411431 -11.101065 -27.795511 109.899781
+three k3 k4 bond intra   ! Ang 10
+C3    core N3    core N3    core 27.899381 -24.378045 39.092836 112.617994
+three k3 k4 bond intra
+C30   core N3    core N3    core 27.404461 -28.701167 32.894908 110.888860
+three k3 k4 bond intra 
+N31   core N3    core O2    core 30.690334 -57.867759 131.992161 118.519871
+three k3 k4 bond intra
+N32   core N3    core O2    core 29.591403 -51.573835 109.437576 117.123061
+three k3 k4 bond intra
+N31   core O2    core O2    core  28.234621 -18.565321 15.300385 125.843459
+three k3 k4 bond intra
+N32   core O2    core O2    core 27.657376 -19.689468 19.068284 126.398476
+
+## torsion angle nitro rotation
+torsion intra bond #### or 0.020217 0.140417
+C30 core N3 core N32 core O2 core  0.022383   -2 0 
+torsion intra bond
+C3  core N3 core N32 core O2 core  0.130447   -2 0  
+torsion intra bond # nitro rotation
+C30 core N3 core N31 core O2 core  0.251418   -2 0 
+#torsion intra bond #Or 0.301726 -0.048683
+#C3  core N3 core N31 core O2 core  0.000     -2 0
+torsion intra bond # nitro swing  
+N31 core N3 core C30 core N3 core  0.743337   -2 0 
+torsion intra bond # nitro swing
+N31 core N3 core C3  core N3 core  0.009977   -2 0 
+torsion intra bond     #### nitro swing
+N32 core N3 core C30 core N3 core  0.480313    2 0
+torsion intra bond     #### nitro swing
+N32 core N3 core C3  core N3 core  0.067301    2 0 
+torsion intra bond   ### H bond rotate
+H core C30 core N3 core C3  core  1.476614    1 0   
+torsion intra bond  
+H core C30 core N3 core N31 core  -2.934512   1 0  
+torsion intra bond  
+H core C30 core N3 core N32 core  2.240271    1 0   
+torsion intra bond
+H core C3  core N3 core C30 core  0.399926   -1 0 
+torsion intra bond
+H core C3  core N3 core N31 core  5.346573   -1 0
+torsion intra bond
+H core C3  core N3 core N32 core -4.018240   -1 0 
+
+##### L-J
+lenn epsilon geometric 12  6 x13 
+H    core H    core  0.000 12.500
+lenn epsilon geometric 12  6 x13 
+H    core C3    core  0.000 12.500
+lenn epsilon geometric 12  6 x13 
+H    core C30   core  0.000 12.500
+lenn epsilon geometric 12  6 x13 
+C3    core C3    core  0.000 12.500
+lenn epsilon geometric 12  6 x13 
+C3    core C30   core  0.000 12.500
+lenn epsilon geometric 12  6 x13 
+C30   core C30   core  0.000 12.500
+lenn epsilon geometric 12  6 x13 
+H     core N3    core  0.000 12.500
+lenn epsilon geometric 12  6 x13 
+H     core N31   core  0.000 12.500
+lenn epsilon geometric 12  6 x13 
+H     core N32   core  0.000 12.500
+lenn epsilon geometric 12  6 x13 
+C3    core N3    core  0.000 12.500
+lenn epsilon geometric 12  6 x13 
+C30   core N3    core  0.000 12.500
+lenn epsilon geometric 12  6 x13 
+C3    core N31   core  0.000 12.500
+lenn epsilon geometric 12  6 x13 
+C3    core N32   core  0.000 12.500
+lenn epsilon geometric 12  6 x13 
+C30   core N31   core  0.000 12.500
+lenn epsilon geometric 12  6 x13 
+C30   core N32   core  0.000 12.500
+lenn epsilon geometric 12  6 x13 
+N3    core N3    core  0.000 12.500
+lenn epsilon geometric 12  6 x13 
+N3    core N31   core  0.000 12.500
+lenn epsilon geometric 12  6 x13 
+N3    core N32   core  0.000 12.500
+lenn epsilon geometric 12  6 x13 
+H     core O2    core  0.000 12.500
+lenn epsilon geometric 12  6 x13 
+C3    core O2    core  0.000 12.500
+lenn epsilon geometric 12  6 x13 
+C30   core O2    core  0.000 12.500
+lenn epsilon geometric 12  6 x13 
+N3    core O2    core  0.000 12.500
+lenn epsilon geometric 12  6 x13 
+N31   core O2    core  0.000 12.500
+lenn epsilon geometric 12  6 x13 
+N32   core O2    core  0.000 12.500
+lenn epsilon geometric 12  6 x13 
+O2    core O2    core  0.000 12.500
+
+
+### epsilon/sigma 
+epsilon/sigma
+H     core 0.659139E-03  3.19500    
+epsilon/sigma
+C3    core 0.412396E-02  3.89830
+epsilon/sigma    
+C30   core 0.412396E-02  3.89830
+epsilon/sigma
+N3    core 0.335641E-02  3.66210
+epsilon/sigma
+N31   core 0.335641E-02  3.66210 
+epsilon/sigma
+N32   core 0.335641E-02  3.66210     
+epsilon/sigma
+O2    core 0.414998E-02  3.40460    
